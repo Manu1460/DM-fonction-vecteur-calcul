@@ -1,0 +1,126 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{qrcode}
+\usepackage{lmodern}
+\usepackage{colortbl}%permet de griser les cases
+\usepackage{tabularx, multirow}
+%\usepackage{lscape}
+\usepackage{xcolor}
+%\usepackage{graphicx}
+\usepackage{tikz,tkz-base}
+\input{preambulemanu.sty}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\def\Oij{$\left(\text{O},~\vec{i},~\vec{j}\right)$}
+\usepackage{fancyhdr}
+\usepackage{MnSymbol,wasysym}
+
+%Permet le code python sur lateX
+\usepackage{minted}
+\usemintedstyle{lovelace}
+\begin{document}
+
+
+\textbf{2nd} \hfill \textbf{DM bilan du premier trimestre} \hfill Lycée Jean Rostand\\
+\trait 
+\subsection*{Exercice 1 \hfill 5pts}
+Voici la courbe $C_f$ d'une fonction $f$. Répondez graphiquement aux questions suivantes:
+
+\begin{center}
+\includegraphics[scale=0.7
+]{courbe.png}
+\end{center}
+
+
+\begin{enumerate}
+\item Quel est le domaine de définition de la fonction $f$ ?
+\item Quelle est l' image de 2 ? Quelle est la valeur de $f(-6)$  ?
+\item Quels sont les antécédents de $6$ ?
+\item Donner les solutions de $f(x)=-4$.
+\item Donner les solutions de l'inéquation $f(x)>4$.
+\item Préciser les solutions de $f(x)=0$ .Établir le tableau de signes de la fonction $f$.
+\item Établir le tableau de variations de $f$.
+\item Quel est le maximum de $f$ sur $[0;9]$ ? Quel est le minimum de $f$ sur $[-8;0]$ ?
+
+
+\end{enumerate}
+
+\subsection*{Exercice 2 \hfill 6pts}
+On considère 3 points A,B et C tels que AB= 6cm, AC=8cm et BC =10cm.
+
+\begin{enumerate}
+\item Tracer le triangle ABC au compas.
+\item Prouver que ABC est un triangle rectangle
+\item Construire N le symétrique du point A par rapport au centre B.
+\item Construire  M l'image du point C par la translation de vecteur $\overrightarrow{BA}$
+\item Construire le point R tel que $\overrightarrow{BR}=\overrightarrow{BN}+\overrightarrow{BC}$
+\item Construire le point T tel que $\overrightarrow{RT}=\overrightarrow{AC}+\overrightarrow{CB}$
+\item Prouver que le quadrilatère NBRT est un rectangle. 
+\end{enumerate}
+ 
+
+ 
+
+
+\subsection*{Exercice 3 \hfill 5pts}
+
+On considère la fonction  sur $[-4;5]$ par $f(x)=1,5x^3-2x+4$. \\
+On note $C_f$ sa courbe dans un repère du plan. 
+\begin{enumerate}
+\item Calculer l'image de -2 par la fonction $f$ en détaillant les calculs.
+\item 
+Compléter l'algorithme en langage python qui permet de calculer les images de la fonction.
+
+ \begin{minted}[gobble=1]{python} 
+ def fonction(x):
+     y=.........
+     return(....)
+\end{minted}
+
+
+\item En utilisant la table de votre calculatrice compléter le tableau suivant:
+
+\begin{center}
+    
+
+\renewcommand{\arraystretch}{2}
+
+\begin{tabular}{|>{\centering}p{0.7cm}|>{\centering}p{0.6cm}|>{\centering}p{0.6cm}|>{\centering}p{0.6cm}|>{\centering}p{0.6cm}|>{\centering}p{0.6cm}|>{\centering}p{0.6cm}|>{\centering}p{0.6cm}|>{\centering}p{0.6cm}|>{\centering}p{0.6cm}|>{\centering}p{0.6cm}|}
+\hline
+$x$  & -4 & -3 & -2& -1 & 0 & 1 & 2 & 3& 4 & 5 \tabularnewline\hline 
+$f(x)$ &  &  &  & &  &  &  &  & &  \tabularnewline 
+
+\hline 
+
+\end{tabular} 
+\end{center}
+
+\item Faites apparaître la courbe $C_f$ sur votre calculatrice sur $[-4;5]$.
+Puis représenter votre courbe dans un repère adapté sur votre copie pour $-4\leq x\leq5$.
+\item Etudier la parité de la fonction.
+\end{enumerate} 
+
+\subsection*{Exercice 4 \hfill 4pts}
+
+\begin{enumerate}
+ 
+\item Simplifier en détaillant $A=10^4\times \dfrac{10^{-2}}{\left(10^{-7}\right)^5}$.
+\item Calculer et donner la forme irréductible de : $\dfrac{1+\dfrac{5}{6}}{2-\dfrac{2}{3}}$
+\item En donnant toutes les étapes, trouver le résultat irréductible de $B=\dfrac{5}{3}-\dfrac{1}{5}+1 $.
+\item Résoudre l'équation: $8x-17=-3x-24 $.
+
+
+
+
+
+\end{enumerate}
+
+
+
+
+
+\end{document}
